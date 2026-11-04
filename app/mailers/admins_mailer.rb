@@ -1,0 +1,2 @@
+class AdminsMailer < ApplicationMailer
+end
