@@ -1,0 +1,11 @@
+<%= render layout: "layouts/root" do %>
+    <div class="flex flex-row gap-2">
+        <div class="bg-green-100">
+            <h1 class="text-xl font-bold">Dashboard</h1>
+            <div></div>
+        </div>
+        <div class="container mx-auto">
+            <%= yield %>
+        </div>
+    </div>    
+<% end %>
