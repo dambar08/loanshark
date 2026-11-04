@@ -1,0 +1,14 @@
+---
+:max_retries: 25
+:concurrency: 5
+development:
+  :concurrency: 4
+staging:
+  :concurrency: 10
+production:
+  :concurrency: 10
+:queues:
+  - high
+  - medium
+  - default
+  - low
