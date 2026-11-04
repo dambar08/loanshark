@@ -29,11 +29,11 @@ class Loan < ApplicationRecord
       end
 
       event :disburse do
-        transitions :agreement_signed => :disbursed
+        transitions agreement_signed: :disbursed
       end
 
       event :cancel do
-        transitions from: [:imcomplete, :applied, :approval_in_process, :approved, :agreement_signed], to: :cancelled
+        transitions from: [ :imcomplete, :applied, :approval_in_process, :approved, :agreement_signed ], to: :cancelled
       end
     end
 end

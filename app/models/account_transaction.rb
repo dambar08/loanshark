@@ -2,7 +2,7 @@ class AccountTransaction < ApplicationRecord
     belongs_to :account
     belongs_to :user, through: :account
     belongs_to :original_transaction, class_name: "AccountTransaction", foreign_key: :reverse_to_id, optional: true, inverse_of: :reversal
-    
+
     has_one :reversal, class_name: "AccountTransaction", foreign_key: :reverse_to_id, inverse_of: :original_transaction
 
     def reversal?  = reverse_to_id.present?
