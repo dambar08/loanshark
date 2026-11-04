@@ -81,17 +81,9 @@ gem "devise", "~> 5.0"
 gem "ahoy_matey", "~> 5.5"
 gem "doorkeeper-jwt", "~> 0.4.5"
 gem "doorkeeper", "~> 5.9"
-
-
-
-
-
 gem "devise-doorkeeper", "~> 1.2"
-
 gem "ransack", "~> 6.0"
-
 gem "paper_trail", "~> 17.0"
-
 gem "aasm", "~> 6.0"
-
 gem "pagy", "~> 43.8"
+gem "dalli", "~> 5.2"
