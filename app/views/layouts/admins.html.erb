@@ -2,7 +2,8 @@
     <div class="flex flex-row gap-2">
         <div class="bg-green-100">
             <h1 class="text-xl font-bold">Dashboard</h1>
-            <div></div>
+            <div><%= link_to "Loans", admins_loans_path %></div>
+            <div><%= link_to "Name Screening", admins_aml_name_screenings_path %></div>
         </div>
         <div class="container mx-auto">
             <%= yield %>

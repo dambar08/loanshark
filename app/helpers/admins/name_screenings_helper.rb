@@ -1,0 +1,2 @@
+module Admins::NameScreeningsHelper
+end

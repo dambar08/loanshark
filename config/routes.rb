@@ -21,6 +21,9 @@ Rails.application.routes.draw do
   root "pages#show"
 
   namespace :admins do
+    namespace :aml do
+      resources :name_screenings
+    end
     resource :dashboard, only: [ :show ]
     resources :account_transactions
     resources :loans do

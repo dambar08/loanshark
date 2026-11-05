@@ -71,6 +71,7 @@ group :test do
   gem "shoulda-matchers", "~> 8.0"
   gem "rspec-its", "~> 2.0"
   gem "rspec-retry", "~> 0.6.2"
+  gem "pundit-matchers", "~> 4.0"
   gem "database_cleaner", "~> 2.1"
 end
 
@@ -87,3 +88,5 @@ gem "paper_trail", "~> 17.0"
 gem "aasm", "~> 6.0"
 gem "pagy", "~> 43.8"
 gem "dalli", "~> 5.2"
+
+gem "sidekiq-unique-jobs", "~> 8.1"

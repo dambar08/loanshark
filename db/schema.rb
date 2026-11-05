@@ -136,8 +136,17 @@ ActiveRecord::Schema[8.1].define(version: 2026_11_03_063443) do
 
   create_table "name_screening_records", force: :cascade do |t|
     t.bigint "name_screening_id"
+    t.bigint "loan_id"
+    t.string "risk_level"
+    t.string "sanction_status"
+    t.string "pep_status"
+    t.string "adverse_media_status"
+    t.string "law_enforcement_status"
+    t.string "alert_identifier"
+    t.datetime "screened_at"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.index ["loan_id"], name: "index_name_screening_records_on_loan_id"
     t.index ["name_screening_id"], name: "index_name_screening_records_on_name_screening_id"
   end
 
@@ -242,6 +251,7 @@ ActiveRecord::Schema[8.1].define(version: 2026_11_03_063443) do
   add_foreign_key "loans", "products"
   add_foreign_key "loans", "users"
   add_foreign_key "name_screening_record_notes", "name_screening_records"
+  add_foreign_key "name_screening_records", "loans"
   add_foreign_key "name_screening_records", "name_screenings"
   add_foreign_key "name_screenings", "users"
   add_foreign_key "oauth_access_grants", "oauth_applications", column: "application_id"

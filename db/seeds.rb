@@ -23,3 +23,8 @@ end
     loan.application_id = SecureRandom.hex(8)
     loan.save!
 end
+
+
+User.all.each do  |user|
+  Aml::NameScreening::Screen.call(user)
+end

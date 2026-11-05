@@ -5,13 +5,15 @@
     <% else %>
         <div>
         <% @loans.each do |loan| %>
-            <div class="flex flex-row gap-2 justify-evenly">
-                <div><%= loan.id %></div>
-                <div><%= loan.application_id %></div>
-                <div><%= loan.amount %></div>
-                <div><%= loan.tenor %></div>
-                <div><%= loan.state.upcase %></div>
-            </div>
+            <%= link_to admins_loan_path(loan) do  %>
+                <div class="flex flex-row gap-2 justify-evenly hover:bg-grey-500">
+                        <div><%= loan.id %></div>
+                        <div><%= loan.application_id %></div>
+                        <div><%= loan.amount %></div>
+                        <div><%= loan.tenor %></div>
+                        <div><%= loan.state.upcase %></div>
+                </div>
+            <% end %>
         <% end %>
     <% end %>
 </div>

@@ -304,6 +304,11 @@ GEM
       nio4r (~> 2.0)
     pundit (2.5.2)
       activesupport (>= 3.0.0)
+    pundit-matchers (4.0.0)
+      rspec-core (~> 3.12)
+      rspec-expectations (~> 3.12)
+      rspec-mocks (~> 3.12)
+      rspec-support (~> 3.12)
     racc (1.8.1)
     rack (3.2.8)
     rack-session (2.1.2)
@@ -446,6 +451,10 @@ GEM
       logger (>= 1.7.0)
       rack (>= 3.2.0)
       redis-client (>= 0.29.0)
+    sidekiq-unique-jobs (8.1.0)
+      concurrent-ruby (~> 1.0, >= 1.0.5)
+      sidekiq (>= 7.0.0, < 9.0.0)
+      thor (>= 1.0, < 3.0)
     sshkit (1.25.1)
       base64
       logger
@@ -533,6 +542,7 @@ DEPENDENCIES
   propshaft
   puma (>= 5.0)
   pundit (~> 2.5)
+  pundit-matchers (~> 4.0)
   rails (~> 8.1.4)
   ransack (~> 6.0)
   rspec (~> 3.13)
@@ -543,6 +553,7 @@ DEPENDENCIES
   selenium-webdriver
   shoulda-matchers (~> 8.0)
   sidekiq (~> 8.1)
+  sidekiq-unique-jobs (~> 8.1)
   stimulus-rails
   tailwindcss-rails
   thruster

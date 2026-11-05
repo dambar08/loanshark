@@ -3,3 +3,4 @@
 <div><%= @loan.id %></div>
 <div><%= @loan.application_id %></div>
 </div>
+<%= turbo_frame_tag "name_screening", src: admins_name_screening(@loan.user.name_screenings.last), loading: :lazy %>

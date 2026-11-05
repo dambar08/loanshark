@@ -5,4 +5,5 @@ class User < ApplicationRecord
 
   has_many :loans, class_name: "Loan", inverse_of: :user
   has_many :accounts, class_name: "Account", inverse_of: :user
+  has_many :name_screenings, dependent: :destroy
 end
