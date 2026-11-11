@@ -87,6 +87,6 @@ gem "ransack", "~> 6.0"
 gem "paper_trail", "~> 17.0"
 gem "aasm", "~> 6.0"
 gem "pagy", "~> 43.8"
-gem "dalli", "~> 5.2"
+gem "dalli", "~> 5.3"
 
 gem "sidekiq-unique-jobs", "~> 8.1"
