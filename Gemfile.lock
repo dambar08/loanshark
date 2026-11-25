@@ -164,7 +164,7 @@ GEM
       reline
     globalid (1.4.0)
       activesupport (>= 6.1)
-    guard (2.20.2)
+    guard (2.21.0)
       formatador (>= 0.2.4)
       listen (>= 2.7, < 4.0)
       logger (~> 1.6)
@@ -530,7 +530,7 @@ DEPENDENCIES
   doorkeeper-jwt (~> 0.4.5)
   dotenv-rails (~> 3.2)
   factory_bot_rails (~> 6.5)
-  guard (~> 2.20)
+  guard (~> 2.21)
   guard-rails (~> 0.8.1)
   image_processing (~> 1.2)
   importmap-rails
