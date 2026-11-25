@@ -59,7 +59,7 @@ end
 group :development do
   # Use console on exceptions pages [https://github.com/rails/web-console]
   gem "web-console"
-  gem "guard", "~> 2.20", require: false
+  gem "guard", "~> 2.21", require: false
   gem "guard-rails", "~> 0.8.1", require: false
 end
 
